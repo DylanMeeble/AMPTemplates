@@ -12,7 +12,7 @@
         "Importable": true,
         "ConfigType": "kvp",
         "ConfigFormatRegex": "^\\s*(?<key>[A-Za-z_][A-Za-z0-9_]*)\\s*=\\s*(?<value>[^,{ \\t\\r\\n][^,\\r\\n]*)\\s*,\\s*$",
-        "ConfigWriteRegex": "^\\s*(?<prefix>(?<key>[A-Za-z_][A-Za-z0-9_]*)\\s*=\\s*)(?<value>[^,{ \\t\\r\\n][^,\\r\\n]*)(?<suffix>\\s*,\\s*)$",
-        "ConfigWriteFormat": "${prefix}${value}${suffix}"
+        "ConfigWriteRegex": "^(?<indent>\\s*)(?<key>[A-Za-z_][A-Za-z0-9_]*)(?<assign>\\s*=\\s*)(?<value>[^,{\\r\\n]+)(?<comma>\\s*,\\s*)$",
+        "ConfigWriteFormat": "${indent}${key}${assign}${value}${comma}"
     }
 ]
