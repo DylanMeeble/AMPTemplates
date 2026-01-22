@@ -8,6 +8,7 @@
     },
     {
         "ConfigFile": "Zomboid/Server/{{servername}}_SandboxVars.lua",
+        "AutoMap": false,
         "ConfigType": "kvp",
         "ConfigFormatRegex": "^\\s*(?<key>[A-Za-z_][A-Za-z0-9_]*)\\s*=\\s*(?<value>[^,{ \\t\\r\\n][^,\\r\\n]*)\\s*,\\s*$",
         "ConfigWriteRegex": "^(?<indent>\\s*)(?<key>[A-Za-z_][A-Za-z0-9_]*)(?<assign>\\s*=\\s*)(?<value>[^,{\\r\\n]+)(?<comma>\\s*,\\s*)$",
