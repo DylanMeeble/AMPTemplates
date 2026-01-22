@@ -5,5 +5,13 @@
         "Importable": true,
         "ConfigType": "kvp",
         "ConfigFormatRegex": "^(?<key>.+?)=(?<value>.*?)$"
+    },
+    {
+        "ConfigFile": "Zomboid/Server/{{servername}}_SandboxVars.lua",
+        "AutoMap": true,
+        "Importable": true,
+        "ConfigType": "kvp",
+        "ConfigFormatRegex": "^\s*(?<key>[A-Za-z_][A-Za-z0-9_]*)\s*=\s*(?<value>[^,{ \t\r\n][^,\r\n]*)\s*,\s*$"
+        
     }
 ]

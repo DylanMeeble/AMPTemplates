@@ -1956,6 +1956,32 @@
         }
     },
     {
+        "DisplayName": "Helicopter Event",
+        "Category": "Project Zomboid:stadia_controller",
+        "Subcategory": "Sandbox Options:joystick:2",
+        "Description": "How regularly a helicopter passes over the Event Zone. (1=Never,2=Once,3=Sometimes,4=Often)",
+        "Keywords": "helicopter,event",
+        "FieldName": "Helicopter",
+        "InputType": "number",
+        "ParamFieldName": "Helicopter",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Zombie-Fake Dead",
+        "Category": "Project Zomboid:stadia_controller",
+        "Subcategory": "Sandbox Options:joystick:2",
+        "Description": "Whether some dead-looking zombies will reanimate and attack the player. (1=World Zombies,2=World/Combat Zombies,3=Never)",
+        "Keywords": "disable,fake,dead,zombie,reanimate",
+        "FieldName": "DisableFakeDead",
+        "InputType": "number",
+        "ParamFieldName": "DisableFakeDead",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "3",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Enable Global Chat",
         "Category": "Project Zomboid:stadia_controller",
         "Subcategory": "Communication:chat:3",
