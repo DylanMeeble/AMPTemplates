@@ -28,6 +28,20 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Server Jar",
+        "Category": "Hytale:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets the jar to start the server with. Default is 'HytaleServer.jar', the official server jar. Custom jars must be placed in the 'Server' directory, or an absolute path or path relative to the 'Server' directory must be specified",
+        "Keywords": "server,jar,startup,StartupJar",
+        "FieldName": "StartupJar",
+        "InputType": "text",
+        "ParamFieldName": "StartupJar",
+        "DefaultValue": "HytaleServer.jar",
+        "Placeholder": "HytaleServer.jar",
+        "Required": true,
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Server Name",
         "Category": "Hytale:stadia_controller",
         "Subcategory": "Server:dns:1",
@@ -188,7 +202,7 @@
         "DisplayName": "Automatic Backup Directory",
         "Category": "Hytale:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "Sets the directory where the server's automatic backups will be stored. Specify either an absolute path or a path relative to the server's base directory",
+        "Description": "Sets the directory where the server's automatic backups will be stored. Specify either an absolute path or a path relative to the Server directory",
         "Keywords": "backup,directory,automatic,backup-dir",
         "FieldName": "backup-dir",
         "InputType": "text",
@@ -392,7 +406,7 @@
         "DisplayName": "Disable Server Download",
         "Category": "Updates",
         "Subcategory": "Server Updates:build:-1",
-        "Description": "If set, the server files will not be automatically downloaded when the server is updated. The server files (Assets.zip and the contents of the Server directory) must be manually transferred from the Hytale launcher files to the 'hytale/Server' directory in the instance datastore (the base directory in the instance's File Manager or SFTP)",
+        "Description": "If set, the server files will not be automatically downloaded when the server is updated. The server files (Assets.zip and the Server directory) must be manually transferred from the Hytale launcher files to the 'hytale' directory in the instance datastore (the base directory in the instance's File Manager or SFTP)",
         "Keywords": "disable,server,download,manual,disable-server-download",
         "FieldName": "disable-server-download",
         "InputType": "checkbox",
